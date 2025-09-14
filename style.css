@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./images/19.gif) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.search-box input {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  margin-right: 9px;
+  width: 250px;
+}
+
+#search-btn {
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+  background-color: rgba(18, 13, 13, 0.4);
+}
+
+.section-container {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #c9a66b;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.album {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.album:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.album img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.album h3 {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #c9a66b;
+}
+
+.album p {
+  font-size: 14px;
+  margin: 3px 0;
+  color: #ddd;
+}
+
+.album a {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #c9a66b;
+  font-weight: bold;
+}
+
+.album a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
