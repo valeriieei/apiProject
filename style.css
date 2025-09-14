@@ -116,15 +116,3 @@ body {
 .album a:hover {
   text-decoration: underline;
 }
-
-@media (max-width: 800px) {
-  .cards-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  .cards-container {
-    grid-template-columns: 1fr;
-  }
-}
